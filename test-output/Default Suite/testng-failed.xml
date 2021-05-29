@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="MavenAutomationProject(failed)">
+    <classes>
+      <class name="com.bridgelabz.selenium.test.TestCases">
+        <methods>
+          <include name="setup"/>
+          <include name="amazon_Login"/>
+          <include name="select_Logout"/>
+        </methods>
+      </class> <!-- com.bridgelabz.selenium.test.TestCases -->
+    </classes>
+  </test> <!-- MavenAutomationProject(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
