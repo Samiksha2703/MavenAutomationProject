@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/kalam/IdeaProjects/MavenAutomationProject">
+    <test name="TestOne">
         <classes>
-            <class name="com.bridgelabz.selenium.controller.DataDriven">
-                <methods>
-                    <include name="data_Driven_Demo_Method"/>
-                </methods>
-            </class>
-            <class name="com.bridgelabz.selenium.test.TestCases">
-                <methods>
-                    <include name="amazon_Login"/>
-                </methods>
-                <methods>
-                    <include name="select_Logout"/>
-                </methods>
+            <class name="com.bridgelabz.selenium.test.excelreport.TestClassOne">
+<!--                <methods>-->
+<!--                    <include name="data_Driven_Demo_Method"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>
+    <test name="TestTwo">
+        <classes>
+            <class name="com.bridgelabz.selenium.test.excelreport.TestClassTwo">
+<!--                <methods>-->
+<!--                    <include name="amazon_Login"/>-->
+<!--                </methods>-->
+<!--                <methods>-->
+<!--                    <include name="select_Logout"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+        </test>
 </suite>
