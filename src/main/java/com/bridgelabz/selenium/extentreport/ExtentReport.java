@@ -1,4 +1,4 @@
-package com.bridgelabz.selenium.com.bridgelabz.selenium.report;
+package com.bridgelabz.selenium.extentreport;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
