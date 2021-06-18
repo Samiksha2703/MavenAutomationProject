@@ -1,3 +1,9 @@
+/**
+ * purpose : To take screenshot
+ * Author : Samiksha Shende
+ * Date : 05/06/2021
+ */
+
 package com.bridgelabz.selenium.utility;
 
 import com.bridgelabz.selenium.base.Base;
@@ -11,7 +17,7 @@ import java.io.IOException;
 public class Screenshot extends Base {
 
     //Method to take a screenshot
-    public void screenshot(String fileName) throws IOException {
+    public static void screenshot(String fileName) throws IOException {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File("C:\\Users\\kalam\\Screenshot/"+fileName+".jpg"));
         System.out.println("Screenshot Taken");

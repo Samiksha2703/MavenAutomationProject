@@ -1,5 +1,10 @@
-package com.bridgelabz.selenium.extentreport;
+/**
+ * purpose : To implement extent report concept in the project
+ * Author : Samiksha Shende
+ * Date : 05/06/2021
+ */
 
+package com.bridgelabz.selenium.extentreport;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;

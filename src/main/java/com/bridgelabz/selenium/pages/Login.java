@@ -1,3 +1,9 @@
+/**
+ * purpose : To implement login functionality in the project
+ * Author : Samiksha Shende
+ * Date : 05/06/2021
+ */
+
 package com.bridgelabz.selenium.pages;
 
 import org.openqa.selenium.WebDriver;

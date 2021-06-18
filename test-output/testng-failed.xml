@@ -5,9 +5,9 @@
     <classes>
       <class name="com.bridgelabz.selenium.test.TestCases">
         <methods>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="amazon_Login"/>
-          <include name="select_Logout"/>
+          <include name="search_Item"/>
         </methods>
       </class> <!-- com.bridgelabz.selenium.test.TestCases -->
     </classes>

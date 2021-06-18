@@ -1,3 +1,9 @@
+/**
+ * purpose : To send email in project
+ * Author : Samiksha Shende
+ * Date : 05/06/2021
+ */
+
 package com.bridgelabz.selenium.utility;
 
 import javax.mail.*;
@@ -35,7 +41,7 @@ public class SendEmailWithAttachment {
 
                     protected PasswordAuthentication getPasswordAuthentication() {
 
-                        return new PasswordAuthentication("samikshashende777@gmail.com", "Welcome@01");
+                        return new PasswordAuthentication("samiksha@yahoo.com", "Samiksha");
                     }
                 });
 
@@ -45,10 +51,10 @@ public class SendEmailWithAttachment {
             Message message = new MimeMessage(session);
 
             // Set the from address
-            message.setFrom(new InternetAddress("samikshashende777@gmail.com"));
+            message.setFrom(new InternetAddress("samiksha@yahoo.com"));
 
             // Set the recipient address
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("sheetalbdz@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("tushar@rediffmail.com"));
 
             // Add the subject link
             message.setSubject("Testing Subject");
@@ -68,12 +74,6 @@ public class SendEmailWithAttachment {
             File att = new File(new File("C:\\Users\\kalam\\IdeaProjects\\MavenAutomationProject\\test-output"), filename);
             messageBodyPart2.attachFile(att);
 
-//            // Create data source and pass the filename
-//            DataSource source = new FileDataSource(filename);
-//
-//            // set the handler
-//            messageBodyPart2.setDataHandler(new DataHandler(source));
-
             // set the file
             messageBodyPart2.setFileName(filename);
 
@@ -82,9 +82,6 @@ public class SendEmailWithAttachment {
 
             // add body part 1
             multipart.addBodyPart(messageBodyPart2);
-
-            // add body part 2
-            multipart.addBodyPart(messageBodyPart1);
 
             // set the content
             message.setContent(multipart);
@@ -100,6 +97,4 @@ public class SendEmailWithAttachment {
         }
 
     }
-
-
 }

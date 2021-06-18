@@ -10,16 +10,7 @@
             </class>
         </classes>
     </test>
-    <test name="TestTwo">
-        <classes>
-            <class name="com.bridgelabz.selenium.test.excelreport.TestClassTwo">
-<!--                <methods>-->
-<!--                    <include name="amazon_Login"/>-->
-<!--                </methods>-->
-<!--                <methods>-->
-<!--                    <include name="select_Logout"/>-->
-<!--                </methods>-->
-            </class>
-        </classes>
-        </test>
+    <listeners>
+        <listener class-name="com.bridgelabz.selenium.utility.TestNgListener"></listener>
+    </listeners>
 </suite>
